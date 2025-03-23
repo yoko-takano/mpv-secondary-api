@@ -1,0 +1,93 @@
+[2025-03-23 22:44:43,725] INFO  * Restarting with stat - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:45:39,817] INFO  * Detected change in '/app/schemas/saving_goal.py', reloading - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:45:39,965] INFO  * Restarting with stat - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:46:45,066] INFO  * Detected change in '/app/schemas/saving_goal.py', reloading - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:46:45,221] INFO  * Restarting with stat - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:46:49,924] INFO Retrieving saving goal with ID: 1 - call_trace=/app/app.py L107 
+[2025-03-23 22:46:49,929] INFO Saving goal with ID 1 found - call_trace=/app/app.py L120 
+[2025-03-23 22:46:52,659] ERROR Exception on /goals/{goal_id} [GET] - call_trace=/usr/local/lib/python3.12/site-packages/flask/app.py L875 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1249, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a SavingGoalViewSchema.
+[2025-03-23 22:46:52,660] INFO 172.22.0.1 - - [23/Mar/2025 22:46:52] "[35m[1mGET /goals/{goal_id}?goal_id=1 HTTP/1.1[0m" 500 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:48:20,411] INFO  * Detected change in '/app/app.py', reloading - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:48:20,546] INFO  * Restarting with stat - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:48:27,210] INFO  * Detected change in '/app/app.py', reloading - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:48:27,359] INFO  * Restarting with stat - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:48:29,794] INFO Retrieving saving goal with ID: 1 - call_trace=/app/app.py L107 
+[2025-03-23 22:48:29,798] INFO Saving goal with ID 1 found - call_trace=/app/app.py L120 
+[2025-03-23 22:48:30,661] ERROR Exception on /goals/{goal_id} [GET] - call_trace=/usr/local/lib/python3.12/site-packages/flask/app.py L875 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1249, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a SavingGoalViewSchema.
+[2025-03-23 22:48:30,662] INFO 172.22.0.1 - - [23/Mar/2025 22:48:30] "[35m[1mGET /goals/{goal_id}?goal_id=1 HTTP/1.1[0m" 500 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:49:04,296] INFO  * Detected change in '/app/app.py', reloading - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:49:04,435] INFO  * Restarting with stat - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:49:13,103] INFO  * Detected change in '/app/app.py', reloading - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:49:13,257] INFO  * Restarting with stat - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:49:14,747] INFO Retrieving saving goal with ID: 1 - call_trace=/app/app.py L107 
+[2025-03-23 22:49:14,753] INFO Saving goal with ID 1 found - call_trace=/app/app.py L120 
+[2025-03-23 22:49:16,204] ERROR Exception on /goals/{goal_id} [GET] - call_trace=/usr/local/lib/python3.12/site-packages/flask/app.py L875 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1249, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a SavingGoalViewSchema.
+[2025-03-23 22:49:16,206] INFO 172.22.0.1 - - [23/Mar/2025 22:49:16] "[35m[1mGET /goals/{goal_id}?goal_id=1 HTTP/1.1[0m" 500 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:50:06,181] INFO  * Detected change in '/app/app.py', reloading - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:50:06,357] INFO  * Restarting with stat - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:50:08,878] INFO Retrieving saving goal with ID: 1 - call_trace=/app/app.py L107 
+[2025-03-23 22:50:08,883] INFO Saving goal with ID 1 found - call_trace=/app/app.py L120 
+[2025-03-23 22:50:09,712] INFO 172.22.0.1 - - [23/Mar/2025 22:50:09] "GET /goals/{goal_id}?goal_id=1 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:51:12,524] INFO  * Detected change in '/app/app.py', reloading - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:51:12,682] INFO  * Restarting with stat - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:51:13,496] INFO Retrieving saving goal with ID: 1 - call_trace=/app/app.py L107 
+[2025-03-23 22:51:13,500] INFO Saving goal with ID 1 found - call_trace=/app/app.py L120 
+[2025-03-23 22:51:14,763] INFO 172.22.0.1 - - [23/Mar/2025 22:51:14] "GET /goals/{goal_id}?goal_id=1 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:51:15,712] INFO Retrieving saving goal with ID: 1 - call_trace=/app/app.py L107 
+[2025-03-23 22:51:15,714] INFO Saving goal with ID 1 found - call_trace=/app/app.py L120 
+[2025-03-23 22:51:15,804] INFO 172.22.0.1 - - [23/Mar/2025 22:51:15] "GET /goals/{goal_id}?goal_id=1 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:51:41,664] INFO  * Detected change in '/app/app.py', reloading - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:51:41,805] INFO  * Restarting with stat - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:51:42,891] INFO Retrieving saving goal with ID: 1 - call_trace=/app/app.py L107 
+[2025-03-23 22:51:42,896] INFO Saving goal with ID 1 found - call_trace=/app/app.py L120 
+[2025-03-23 22:51:43,990] INFO 172.22.0.1 - - [23/Mar/2025 22:51:43] "GET /goals/{goal_id}?goal_id=1 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:51:57,638] INFO  * Detected change in '/app/app.py', reloading - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:51:57,769] INFO  * Restarting with stat - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:51:59,510] INFO Retrieving saving goal with ID: 1 - call_trace=/app/app.py L107 
+[2025-03-23 22:51:59,516] INFO Saving goal with ID 1 found - call_trace=/app/app.py L120 
+[2025-03-23 22:52:01,054] INFO 172.22.0.1 - - [23/Mar/2025 22:52:01] "GET /goals/{goal_id}?goal_id=1 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:54:58,452] INFO  * Detected change in '/app/app.py', reloading - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:54:58,585] INFO  * Restarting with stat - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2025-03-23 22:55:00,980] INFO Retrieving saving goal with ID: 1 - call_trace=/app/app.py L107 
+[2025-03-23 22:55:00,986] INFO Saving goal with ID 1 found - call_trace=/app/app.py L120 
+[2025-03-23 22:55:01,775] ERROR Error retrieving saving goal with ID 1.: 'SavingGoalViewSchema' object has no attribute 'to_dict' - call_trace=/app/app.py L150 
+[2025-03-23 22:55:29,683] INFO  * Restarting with stat - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
