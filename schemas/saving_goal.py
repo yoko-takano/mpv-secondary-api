@@ -1,10 +1,13 @@
 import enum
 from datetime import datetime
 from pydantic import BaseModel, field_validator, Field
-from typing import Optional, List
+from typing import List
 
 
 class CurrencyEnumSchema(str, enum.Enum):
+    """
+    Enum that defines the possible currencies for a saving goal.
+    """
     USD = "USD"
     BRL = "BRL"
     EUR = "EUR"
@@ -16,10 +19,10 @@ class SavingGoalSchema(BaseModel):
     """
     Defines how a new saving goal should be represented for insertion.
     """
-    goal_name: str = "Pretty dress" # Name of the saving goal
-    goal_currency: CurrencyEnumSchema = "USD" # Currency of the saving goal
-    goal_value: float = 300.00 # Total value to be saved for the goal
-    monthly_savings: float = 100.0 # Savings per month of the salary to be saved
+    goal_name: str = Field("Pretty dress", description="Name of the saving goal")
+    goal_currency: CurrencyEnumSchema = Field("USD", description="Currency of the saving goal")
+    goal_value: float = Field(300.00, description="Total value to be saved for the goal")
+    monthly_savings: float = Field(100.0, description="Savings per month of the salary to be saved")
 
     class Config:
         orm_mode = True
@@ -29,7 +32,7 @@ class SavingGoalSearchSchema(BaseModel):
     """
     Defines the structure for searching a SavingGoal based on its unique identifier (goal_id).
     """
-    goal_id: str = Field(..., description="The unique identifier (goal_id) for a SavingGoal in the database")
+    goal_id: int = Field(..., description="The unique identifier for a SavingGoal in the database")
 
 
 class SavingGoalViewSchema(BaseModel):
@@ -64,28 +67,3 @@ class SavingGoalsListSchema(BaseModel):
 
     class Config:
         orm_mode = True
-
-
-class SavingGoalByIDSearchSchema(BaseModel):
-    """
-    Defines the data structure for searching a saving goal by ID.
-    """
-    id: int
-
-    class Config:
-        orm_mode = True
-
-
-class CurrencyEnumSchema(str, enum.Enum):
-    USD = "USD"
-    BRL = "BRL"
-    EUR = "EUR"
-    JPY = "JPY"
-    KRW = "KRW"
-
-
-# Modelo para a conversão de moedas
-class ConversionRequestSchema(BaseModel):
-    amount: float
-    from_currency: CurrencyEnumSchema
-    to_currency: CurrencyEnumSchema

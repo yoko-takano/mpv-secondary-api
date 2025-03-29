@@ -26,6 +26,7 @@ class SavingGoal(Base):
             goal_currency: str,
             goal_value: float,
             monthly_savings: float,
+            converted_value: float,
             **kw: Any):
         """
         Initializes a new saving goal with the provided parameters.
@@ -41,16 +42,8 @@ class SavingGoal(Base):
         self.goal_currency = goal_currency.split(".")[-1]
         self.goal_value = goal_value
         self.monthly_savings = monthly_savings
-
-        if self.goal_currency != "BRL":
-            try:
-                pair = f"{self.goal_currency}BRL=X"
-                exchange_rate = YahooFinanceService.get_exchange_rate(pair)
-                self.converted_value = round(self.goal_value * exchange_rate, 2)
-            except Exception as e:
-                self.converted_value = None
-        else:
-            self.converted_value = self.goal_value
+        self.goal_currency = goal_currency
+        self.converted_value = converted_value
 
     def to_dict(self):
         """
