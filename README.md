@@ -8,7 +8,7 @@
 A **API Secundária** é um serviço desenvolvido em Flask que gerencia objetivos de economia (Saving Goals). 
 Essa API permite criar, consultar, atualizar e deletar metas de economia cadastradas em um banco de dados. 
 Além disso, a API realiza conversão automática de valores para a moeda BRL (Real) utilizando dados da API 
-externa [Yahoo Finance](https://pypi.org/project/yfinance/).
+externa [Yahoo Finance](https://developer.yahoo.com/api/).
 
 ---
 
@@ -76,9 +76,9 @@ As rotas abaixo compõem as funcionalidades de gerenciamento de goals de economi
 **`PUT` /goals/{goal_id}** - Atualiza uma meta existente  
 **`DELETE` goals/{goal_id}** - Remove uma meta do banco de dados  
 
-### 🌐 Integração com a API Externa (`yfinance`)
+### 🌐 Integração com a API Externa (`Yahoo Finance`)
 
-As rotas `POST /goals` e `PUT /goals/{goal_id}` utilizam a biblioteca `yfinance` para consultar 
+As rotas `POST /goals` e `PUT /goals/{goal_id}` utilizam a API `Yahoo Finance` para consultar 
 o valor atual de ativos financeiros (ações, fundos etc.) no momento da criação ou atualização de uma meta. 
 Essa integração garante que o planejamento financeiro do usuário seja feito com base em informações 
 atualizadas do mercado.
