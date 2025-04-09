@@ -1,4 +1,4 @@
-# API Secundária
+# 🌱 API Secundária
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)  
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)  
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-FFCA28?style=for-the-badge&logo=sqlalchemy&logoColor=black)  
